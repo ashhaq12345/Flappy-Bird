@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>gameEvent</name>
+    <events>
+        <event-block sid="7258402098213354">
+            <conditions>
+                <condition id="1" name="On any click" sid="8749076321142727" type="Mouse" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="9" name="Set vector Y" sid="5870815059916728" type="Alien">
+                    <param id="0" name="Vector Y">-500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8154390848273804">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="5651284437138762" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="6361577322283746" type="ground">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="-1" name="Set X" sid="2934421833634283" type="hilltop">
+                    <param id="0" name="X">Self.X-5</param>
+                </action>
+                <action id="-1" name="Set X" sid="1275438234497041" type="hillbot">
+                    <param id="0" name="X">Self.X-5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2804250637020984">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="7613958889237506" type="ground">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-480</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="7350717754168319" type="ground">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
